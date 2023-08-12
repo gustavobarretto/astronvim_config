@@ -9,4 +9,9 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "thedenisnikulin/vim-cyberpunk",
+    as = "vim-cyberpunk",
+    config = function() require("vim-cyberpunk").setup() end,
+  },
 }
