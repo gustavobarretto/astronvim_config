@@ -21,5 +21,18 @@ return {
     config = function()
       require 'nordic'.load()
     end
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+    config = function() require("gruvbox").setup({
+      italic = {
+        strings = false,
+        comments = false,
+        emphasis = false,
+        operators = false,
+        folds = false
+      },
+      contrast = "hard"
+    }) end,
   }
 }
