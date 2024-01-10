@@ -10,19 +10,6 @@ return {
   --   end,
   -- },
   {
-    "thedenisnikulin/vim-cyberpunk",
-    as = "vim-cyberpunk",
-    config = function() require("vim-cyberpunk").setup() end,
-  },
-  {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require 'nordic'.load()
-    end
-  },
-  {
     "ellisonleao/gruvbox.nvim",
     config = function() require("gruvbox").setup({
       italic = {
@@ -34,5 +21,9 @@ return {
       },
       contrast = "hard"
     }) end,
+  },
+  {
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
   }
 }
