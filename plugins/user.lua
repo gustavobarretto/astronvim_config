@@ -12,6 +12,8 @@ return {
   {
     "ellisonleao/gruvbox.nvim",
     config = function() require("gruvbox").setup({
+      contrast = "soft",
+      terminal_colors = true,
       italic = {
         strings = false,
         comments = false,
@@ -19,9 +21,9 @@ return {
         operators = false,
         folds = false
       },
-      contrast = "hard"
     }) end,
   },
+  { "EdenEast/nightfox.nvim" }, -- lazy
   {
     "Exafunction/codeium.vim",
     event = "BufEnter",
